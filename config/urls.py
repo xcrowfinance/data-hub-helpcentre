@@ -20,7 +20,7 @@ urlpatterns = [
     path("auth/", include(authbroker_client_urls)),
     path("pingdom/", include("pingdom.urls")),
     path("api/feeds/", include(article_urls)),
-    path( "api/pipeline/", include(api_pipeline_urls)),
+    path("api/pipeline/", include(api_pipeline_urls)),
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in
     # the list:
